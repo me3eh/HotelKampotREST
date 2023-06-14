@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Reservations</h1>
+
+<div id="api_v1_reservations">
+  <% @api_v1_reservations.each do |api_v1_reservation| %>
+    <%= render api_v1_reservation %>
+    <p>
+      <%= link_to "Show this reservation", api_v1_reservation %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New reservation", new_api_v1_reservation_path %>

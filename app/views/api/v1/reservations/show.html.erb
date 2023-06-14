@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @api_v1_reservation %>
+
+<div>
+  <%= link_to "Edit this reservation", edit_api_v1_reservation_path(@api_v1_reservation) %> |
+  <%= link_to "Back to reservations", api_v1_reservations_path %>
+
+  <%= button_to "Destroy this reservation", @api_v1_reservation, method: :delete %>
+</div>
